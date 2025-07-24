@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boostrap Class Demo Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <style>
+        @media (min-width: 576px) {
+            .container {
+                background-color: rgb(237, 237, 242);
+                padding: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body class="bg-success">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+
+    <div class="container mt-4 ">
+
+        <!-- Grid Container -->
+        <div class="row">
+            <!-- content -->
+            <div class="col-md-2 col-lg-8 bg-info m-4 m-md-2 m-lg-2">
+                <h2>Welcome to WITU</h2>
+                <p>Your tech future starts here!. </p>
+                <strong>Join Us</strong>
+                <b>Join Us here</b>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="col-md-2 col-lg-4  bg-secondary m-4">
+                <h2>Welcome to WITU2</h2>
+                <p>Your tech future starts here!. </p>
+                <!-- <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAulBMVEX///96Efh9Evl0EfaKE/yFEvuCEvpwEfXx5fz38P38+f706/369f7Vt/7Otvt8LfeQLfyEHPtyAPjRwPx9IPjIqvvAoPuHAP1qB/S1gv3dyvzPvPvHp/zYw/3p4/2ugvuhgvfp2/5eAPSPRfqVWvnl0v+tbf20k/nEnPx6NPXbwP6WOv3n1fywc/2hdPh/O/WJTfeZaPiyev2dS/2sZv22mfm7jf2fVfymX/2YYfi6p/iZefZ5RPSGXfQnfMU+AAAJ7UlEQVR4nO2cfXPauBbGbVyKZTnQCBNUCBCcsCRbysv2lpS7vd//a12/CevVUohFdnb0TMhM80cnv5zzHOlIx/Y8JycnJycnJycnJycnJycnJycnJycnJycnJycnp3+f4OrmEvUNNF3Ba5LEN3+9Pn5pS4P8Q+vxaduPr8Vy8+PLONOns7pv0WdenfzjU0IIJfv+dVi+f6I4lOqW31gOGUvBw8tHwfYaLEYo72PxCxz/H8XCpd9nWZJ1VCxZtiW2Wf5jxEKIjFh4mIoloznZZRmZo/BJJjW/gqWqB8HIJgt8tG+YmsVHjzZXnGfDkHwSyrWURWYYiiXTT3ss4JexY0xWmAbzk9CcgDWY2TdTmO6FhuECg15m1mCeTVdLnuUSw5Q09vLsaADTleTYhYbJYY62WKKvehiV+S8wTAGziCzBxH+ZWcbEMGYsGYyt7bNJZAxZjAzzwTDGhjFksZhmWph3rZaSJAuCD4RRsJhsL30py0dGpl3DZCwfByNbLVUoRob5QM8ozC/1S8O2vw7MB8KYmv9NLB9ZAAySrCNJMjVLYG+dadoB2DBMkMFsbfUA4R9KGMVW+V0sBcwhtAQzV/ZmlGFu1eoghMZGLFWSZTCnuSWYZWOjWbIsRvdK3R0fDvvPCJkapoBZWoJZ/ZDDdGvz306a/wu46h/3HI6YYwFhCdB+ZQlmIu+au5RheJiIU/6jzegRNcP4NcxO89e5WDe3yrgQ67MwPAoBWv4kwWlOskyJrQP0UUNllsDIUQrFQx8ZsQTI1jngvboyk6pMwTDBYFHiyJskqGLht5cMS4D/a4clkp1ndBmWGqYJJc4+3sxHOsMUMGs7WwD4XYThWAhM5XUCVvzAIyilvHtkwJJtAeyc0C5flTBdFqb4tefTWalh9jWcTeYhiL0aJoJbpDNMDvNqZ6GZ3HabDZPDzEiGefcp4nToz2MqNKPE17IEOLBTm28USya9JbsdEoN4I8RvyRDa9QGhATF8QortJa3USm2O1zwMb5hmmNwgyF9XNAAA7yjzCw9jpwKE/M5M1o5JYah+zE9GFQoAUX+gS7LcNE82tpobxV5GC8P0luhxGYFS0WanZ8lobFSAvgyG72EqGI9Ps3ofhvpxBRPDPeJYRBQ7pgFcZyYxTNaOFTCe6BkK5ggrmjhmYORxyfuz9pvNUMrSZVkkacYfYKBDCZN9E2BkLFlo2l822VqmuufPYAhNCSMcxqDXOYkMoGAUhsnUS9dts4CxZPkXDzDqyJQw4sESOoUEZrNDepYsz1DbefaMdIYpgiMvzQzM2TNUaW5iyfLsuV0WNjBy8+eHMXxkxMOYuppFC8YySpYAtxyarxIWwTCfeRjJ6SXabUiWLZ+QEUuvhxdtski2ZfLT/jNMTCLT4WDuAAnMXaJZYQhMFpsW15rJFzEw8puLCibf4lfVjGNZQGlgmlhymJfW9s6THzqW8wl5AVO0klU1Y1GI+2H2dTRNsvwb3rdE8+c3gUU1Sdb1hx5pvngYhNLThuQYiEeBWZKVQD38Mm0BJf4qXWGkLEVkSP91RzdnaYpOd6EXnw3TR0YsZVxyYfzOC4Eo2nxH0lMMqWGqNKtCA+eUitoKaq1TQ/P3KpZMabrdRBdf18BvYz4qTeYnkZGKAgGQWvr1hunVStN0d+lGLRROMNWrpQBT/+4MCIDL/ik1ZAnOSUaEe5e2aiKMwjCfBRigYgHzm8X2KUFvM0ytpF2YxrvxEkaNkv8kipejxQC9zTB2YJrv+QsY4fdn0gzCvMmcHhB6m2HahTGZikuGpMPPIsAeyuYrZY5SCIDlusi1tyVZazBGk2QUTDihtVrO8/PMMw0E8C6jaUiyQMZyeQHISjO3ykgKGXsJW8PEo4R+8uLlZfe4P85AVOPEdxq/CCxZab58OJhfNPWDMQQmBvEdOa/s+OUxbLYR8AdrGNc0W/QWw7xv0SxUbWcMx0hLmLwExPfcRaxfAU0pmoEqz0QWnD60cbSZbzRNh0moNGNhzkskSkc1zE1qahi8G7aA4p1bAJ35CUzMwfCTZOkEwLCkiRI5hsjSVgtQNWdGY6SSyAj3lmhPikAYr7FRkrXYnBVts9lUHFWa6TTzGaWrgiYMQ7iS5ZlomHaPaL+ODQwjg5HdJ6MjKFnCEKRiCZCwtHqgkR81mbAIMNK7cXSKw0rgRazO4gqTtnwK+IwMkoyCgQWM/J4fDTwCA08CjISl7QcC+NAoxq9knuFYsq1yUsMI66bIgnDr1wBrKjTquesSBtIwviC0j5QwYlW2cHDuhaiZpZy7JpGBEKjv+dECnGEeJTuaHgfT/pUG+GNMsageVEiGMWlaqmomJpmfDuG5AAwkBYAVtnDZ5PXpEqBg6fjTuGpaqmomYUHJOTAhTDkOyVbZxt35ZqxmKYEKmIj0K1KYIsv658DASapjwdjGBW34a9xs/ioyZBdZlGaJ8OLMEsYLJstkfTK2cnUeF/VMM3fNwkjigoKH+ZklBAlfzASldsaaiGmkLAIMEGH8Yn6mRglhP9XExZJlikEgpV/ICTkVmZ8pZpSmndN6uIQ0zG+kY8E9O4NAy9exjoWG2UyHjGbL5TKENEt8ZFmkMHs7I1pwO9Y+dOFP6wMLWlkUWJDcMP0B281IWHrY0vBclFeAZpY6MiH5KAUmVJJJdjFW/e95I6Qd7qcjI4SCEfxzh5kkk6FkMJYGTr3RWMfSSQqYUMcC4fx+wLIoYLCtUeD+rSbJ+DRToYD5cIv15s9ZkjZu/2SafBtrWOg0U8UEhJv+IuAPMuQsPWxtfH71Q5JnDEsnmUX5uFJ9EQCZ2wwQLmej9QFhzHAoWbLKbOvBhuUvLYy/uL9T6/iwPe0TLPZjKpYetvbIyfzEwMgeheskTcoiggx6fhrmYOthIHhAGhZfslFunlhqMkwBY+sxLbBAWhb9DDnP0cTSS/+29QBdtBDmrkWW5ocuRJhGlgzG2iP0PAxvGElgfE1gmll66YO1h04Xsrnr97A0G+ZKMG0ZRsdynchcw/wfCKNKsmaWfwjMVVjsw7zFMM3e17JYh2mJxcAwBYy1R+gX8rlraY61wnKVRfPdhjGoypbTzDtK566lSaZhMTJMz8rdDNHz+Jrmz4XtvRJsVvbNVzJ/zrKz97I2cBIHr1V+ed/KT2BsXDQRPXdaYDE1f37QbPEFh17Iv5ZA9rqo1gzTw7+tvux45L+bxTguPWzr+XmiAx8aa+bP6vLBLovn+bq3eejNbwiT9myzMDQ2DYNTbJ/F87YB8i9kMY4LxvgqL5/2vOk+QYh/+LUUzj6IO0cu/onfohQP9rYOzAXF/e3T48CWXn7/7+/rvbA9F1xNTV6Lf4mu/Cp9JycnJycnJycnJycnJycnJycnJycnJycnJycnpyvp/xw0g4DHg8TTAAAAAElFTkSuQmCC" /> -->
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+<form class="row g-3">
+  <div class="col-auto">
+    <label for="staticEmail2" class="visually-hidden">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+  </div>
+  <div class="col-auto">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+  </div>
+</form>
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
