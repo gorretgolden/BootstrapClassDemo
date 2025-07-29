@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .test {
+            background-color: orange;
+        }
+
+        .hero-section-content {
+
+            padding: 40px;
+        }
+
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q0FSU3xlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+
+        .order-btn {
+            background-color: orange;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: orange;
+        }
+
+        .overlay {
+            background-color: rgba(115, 115, 115, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <!-- left -->
+                    <div class="d-flex align-items-end">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/safeboda-logo.png" style="width: 50px;" alt="Safeboda Logo" />
+                        </a>
+                    </div>
+
+
+
+                    <!-- toggler -->
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="d-flex justify-content-end text-white">
+                        <p class="text-white">
+                            Data here
+                        </p>
+                    </div> -->
+
+
+
+                    <!--   menu items -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu test" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item " href="#">Coaching</a></li>
+                                        <li><a class="dropdown-item" href="#">Coaching</a></li>
+                                        <li><a class="dropdown-item" href="#">Coaching</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Contact Us</a>
+                                </li>
+
+
+                            </ul>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+        </header>
+
+    </section>
+
+
+    <!-- hero section -->
+    <section class="hero-section mt-0 position-relative">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center hero-section-content">
+
+                    <!-- overlay -->
+                    <div class="overlay position-absolute top-0  start-0 h-100 w-100">
+
+                    </div>
+
+                    <!-- <br />
+                    <br /> -->
+                    <!-- content -->
+                    <div class="content position-relative mb-5 top-50 start-50 translate-middle text-center">
+                        <h1 class="text-white">Welcome to SafeBoda</h1>
+                        <p class="text-white fs-4">Get a ride today!</p>
+                        <button class="btn text-white order-btn rounded-pill fs-5">Order Now</button>
+                        <br />
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- services section -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="card col" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                  <div class="card col" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdG9yY3ljbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+    <section>
+
+    </section>
+
+
+
+
+    <!-- JS Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
